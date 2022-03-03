@@ -1,0 +1,41 @@
+.loadingPage {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.loadingCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  border-top: 10px solid rgb(34, 34, 34);
+  border-bottom: 10px solid rgb(32, 23, 23);
+  animation: loading 1s linear infinite;
+}
+
+.loader-container{
+  position: absolute;
+  top: 10; 
+  left: 0;
+  z-index: 10000;
+  background: #e6eff1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader-container.fade-out{
+  top: 120%;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
