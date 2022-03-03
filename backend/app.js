@@ -28,12 +28,10 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 //   res.status(200).json({message:" API Root Working"})
 // })
 
-// app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-// });
-
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 });
+
+
 
 module.exports = app;
