@@ -10,6 +10,7 @@ import User from "../User/User";
 import "./Account.css";
 
 const Account = () => {
+  
   const dispatch = useDispatch();
   const alert = useAlert();
 
